@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'tela_inicial/css/css.css' %}">
+</head>
+<body>
+    <h1>[NOME DA BARBEARIA]</h1>
+    <h3 class="center">[ou somente o logo]</h3>
+    <p class="center">
+        <img id="logo_barbearia" src="{% static 'tela_inicial/img/logo_barbearia.png' %}"
+        alt="[NOME DA BARBEARIA]">
+    </p>    
+    <article class="container">
+        <div class="caixa">
+            <div class="chat">
+                <h2><strong>Seja bem-vindo ao nosso chat de agendamento.</strong></h2>
+            </div>
+            <div class="chat">    
+                <h2><strong>Por Favor, informe seu nome completo.</strong></h2>
+            </div>
+            
+            <div class="chat_usuario">
+                <form class="chat_usuario" action="{% url 'tela_inicial' %}" method="POST">{% csrf_token %}
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')">
+                    
+                    <button type="submit">
+                        <img id="enviar" src="{% static 'tela_inicial/img/enviar.png' %}" alt="Enviar">
+            
+                    </button>
+            </form>
+            </div>
+            
+          
+            
+        <br />
+        </div>
+    </article>
+</body>
+</html>

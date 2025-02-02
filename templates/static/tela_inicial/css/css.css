@@ -1,0 +1,118 @@
+/*variavel pra cor do fundo*/
+:root{
+    --cor-fundo: DimGrey;
+    --cor-chat: grey;
+    --cor-balao: #C0C0C0;
+}
+/*****************************************/
+/*centralizando o conteudo*/
+body{
+    background-color: var(--cor-fundo);
+}
+
+.caixa{
+    
+    text-align: center;
+    justify-content: center;
+    background-color: var(--cor-chat);
+    width: 95%;
+    height: 0 auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-fundo);
+}
+/*****************************************/
+/*formatando os textos*/
+h1{
+   
+    text-align: center;
+    font-family: arial;
+    font-size: 18px;
+}
+/*H2 SERÁ UTILIZADA PRA FAZER TODO O CHAT*/
+ h2{
+    margin-left: 10px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;/*chat gpt aconselha a usar essa fonte*/
+    font-size: 16px;
+    color: black;
+
+}
+
+.chat{
+    width: 75%;
+    font-weight: normal;
+    
+    background-color: var(--cor-balao); 
+    border-radius: 7px;
+    margin-top: 15px;
+    margin-left: 8px;
+}
+
+#nome{
+    
+    background-color: white;
+    border-radius: 7px;
+    width: 80%;
+    height: 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chat_usuario{
+    margin-left: 200px;
+    text-align: right;
+    width: 95%;
+    font-weight: normal;
+    
+    background-color: var(--cor-balao); 
+    
+    margin-top: 15px;
+    margin-left: 8px;
+}
+
+/*****************************************/
+/*ajustando a imagem*/
+.center{
+    text-align: center;
+}
+
+#logo_barbearia{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}   
+
+button{
+    border-radius: 30px;
+    background-color: transparent;
+    background-color: green;
+    
+}
+
+#enviar{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    background-color:green ;
+    border: none;
+}   
+
+
+
+
+
+
+
+
+
+
+
+
