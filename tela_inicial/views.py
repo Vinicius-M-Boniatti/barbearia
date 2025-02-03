@@ -4,11 +4,11 @@ from django.urls import reverse
 
 # Create your views here.
 def tela_inicial_view(request):
+   return render(request, 'tela_inicial/index.html')
+   
+   
     
-    if request.method == 'POST':
-        nome = request.POST.get('nome')
-        return render(request, 'tela_inicial/index.html')
-
+    
     
     
         

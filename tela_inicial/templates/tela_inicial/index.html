@@ -24,7 +24,7 @@
             </div>
             
             <div class="chat_usuario">
-                <form class="chat_usuario" action="{% url 'tela_inicial' %}" method="POST">{% csrf_token %}
+                <form class="chat_usuario" action="{% url 'index' %}" method="POST">{% csrf_token %}
                     <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')">
                     
                     <button type="submit">
